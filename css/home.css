@@ -1,0 +1,47 @@
+* {
+  transition: all 0.1s ease-in-out;
+}
+
+:root {
+  --error: #c80000;
+  --success: #00c800;
+  --warning: #c8c800;
+}
+
+body,
+html {
+  background: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  padding: 5px;
+  color: white;
+}
+
+.e {
+  color: var(--error);
+}
+
+.s {
+  color: var(--success);
+}
+
+.w {
+  color: var(--warning);
+}
+
+span {
+  display: block;
+  font-family: monospace;
+  font-size: 1.5em;
+
+}

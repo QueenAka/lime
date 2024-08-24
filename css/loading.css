@@ -1,0 +1,49 @@
+* {
+  transition: all 0.1s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+canvas {
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  font-family: monospace;
+  height: 20px;
+  width: 20px;
+  z-index: 999;
+  color: white;
+}
+
+svg:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+svg:active {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* Salad */
