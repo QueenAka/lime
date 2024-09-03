@@ -87,18 +87,10 @@ async function start() {
   }
   await wait(1000);
   await typeEffect("Welcome back Lime.", "s");
-  const date = new Date();
-  if (!(date.getMonth() == 7 && date.getDate() == 31)) {
-    await wait(1000);
-    await typeEffect("This system is only available on August 31st.", "w");
-    await wait(1000);
-    window.location.href = "..";
-  } else {
-    await wait(1000);
-    await typeEffect("System is ready.", "s");
-    await typeEffect("Booting into LimeOS...");
-    await wait(1000);
-    fade();
-  }
+  await wait(1000);
+  await typeEffect("System is ready.", "s");
+  await typeEffect("Booting into LimeOS...");
+  await wait(1000);
+  fade();
 }
 start();
